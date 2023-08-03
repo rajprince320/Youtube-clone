@@ -7,7 +7,6 @@ let url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResu
 async function mostPopular(url) {
   let link = await fetch(url).catch((err) => console.log(err));
   let data = await link.json();
-  console.log(data.items.value);
   appendData(data.items);
 }
 mostPopular(url);
