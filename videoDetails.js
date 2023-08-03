@@ -3,7 +3,7 @@ function playVideo(data) {
   let container = document.getElementById("play");
   let iframe = document.createElement("iframe");
   iframe.src = `https://www.youtube.com/embed/${data.videoId}?autoplay=1`;
-  iframe.width = "100%";
+  iframe.width = "735px";
   iframe.height = "413px";
   iframe.setAttribute = ("allowfullscreen", true);
   container.append(iframe);
